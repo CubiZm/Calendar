@@ -1,0 +1,47 @@
+.header {
+	background: $black;
+	min-height: 119px;
+}
+
+.logo {
+	padding: 12px 0 0 62px;
+}
+
+.menu {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	position: relative;
+	top: -60px;
+	left: 101px;
+	float: right;
+
+	font-weight: 600;
+	text-transform: uppercase;
+	&__item { }
+	&__link {
+		padding: 20px 15px;
+		list-style-type: none;
+		color: $white;
+		font-size: 13px;
+	}
+}
+
+.country-item {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	position: relative;
+	top: -90px;
+	width: 150px;
+	left: -62px;
+	float: right;
+	&::before {
+		content: " ";
+		display: block;
+		clear: both;
+	}
+	&__select {
+		@include select;
+	}
+}

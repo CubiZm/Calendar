@@ -1,0 +1,9 @@
+@mixin select {
+	padding-left: 5px;
+	background: #474747;
+	border: 1px solid #3f3f3f;
+	color: $white;
+	font-weight: 100;
+	font-size: 14px;
+	text-transform: uppercase;
+}

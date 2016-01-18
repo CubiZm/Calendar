@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+html(lang="en")
+head
+		meta(charset="UTF-8")
+		link(rel="stylesheet", href="css/style.css")
+		link(href='https://fonts.googleapis.com/css?family=Lato:400,300,700,900', rel='stylesheet', type='text/css')
+		title CloudCalendar
+body
+	.wrapper-global
+		header.header
+			.logo
+				img(src="../img/logo.png", alt="logo")
+			.country-item
+					.country-item__money
+						select.country-item__select(size='1', name='money')
+							option.country-item__option(selected='', value='Rub') Rub
+							option.country-item__option(value='Dollars') Dollars
+					.country-item__language
+					select.country-item__select(size='1', name='language')
+						option.country-item__option(value='Russian') Rus
+						option.country-item__option(selected='', value='English') English
+			menu.menu
+				li.menu__item
+					a.menu__link Special & Offers
+				li.menu__item
+					a.menu__link   Hotel Details
+				li.menu__item
+					a.menu__link Map
+				li.menu__item
+					a.menu__link Photos
